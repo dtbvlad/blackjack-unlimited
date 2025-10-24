@@ -10,10 +10,22 @@
     <div id="game-container">
         <h1>Blackjack</h1>
         <div id="balance">Balance: $1000</div>
-        <div id="bet-container">
+
+                <div id="theme-container">
+            <label for="theme-select">Theme:</label>
+            <select id="theme-select">
+                <option value="default">Default</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="dark">Dark</option>
+            </select>
+           </div>
+                      <div id="bet-container">
             <label for="bet">Bet:</label>
+                    
             <input type="number" id="bet" value="10" min="1">
             <button id="deal-btn">Deal</button>
+                    <button id="all-in-btn">All In</button>
         </div>
         <div id="dealer" class="hand-area">
             <h2>Dealer's Hand</h2>
