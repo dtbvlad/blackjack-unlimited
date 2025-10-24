@@ -1,0 +1,121 @@
+/*
+ * Basic styling for the blackjack game. The design opts for a
+ * dark, casino‑like theme with contrasting white text and a
+ * centered layout. Card elements are styled to resemble
+ * simplified playing cards using plain text – no external
+ * images are required. Feel free to tweak sizes, colours or
+ * fonts to match your own preferences.
+ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b3d91; /* deep blue reminiscent of casino tables */
+    color: #ffffff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-container {
+    background-color: #004080;
+    padding: 20px;
+    border-radius: 10px;
+    width: 380px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#balance {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#bet-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#bet-container label {
+    margin-right: 5px;
+}
+
+#bet {
+    width: 70px;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: none;
+    font-size: 1em;
+}
+
+button {
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 0.9em;
+    border-radius: 3px;
+    border: none;
+    color: #004080;
+    background-color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+button:not(:disabled):hover {
+    background-color: #cce0ff;
+}
+
+.hand-area {
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.card {
+    width: 45px;
+    height: 65px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.score {
+    font-size: 0.9em;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    min-height: 24px;
+    font-size: 1em;
+}
